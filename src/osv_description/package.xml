@@ -1,0 +1,12 @@
+<package format="2">
+  <name>osv_description</name>
+  <version>0.0.1</version>
+  <description>
+  Provides a URDF for an OSV
+  </description>
+  <maintainer email="menson168@gmail.com">Menson Li</maintainer>
+  <license>APACHE 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>urdf</depend>
+</package>
