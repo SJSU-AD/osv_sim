@@ -3,7 +3,7 @@
   <arg name="model" default="$(find osv_description)/urdf/osv.urdf"/>
   <arg name="rvizconfig" default="$(find fusion_ad_sim)/rviz/demo.rviz" />
 
-  <param name="robot_description" textfile="$(arg model)"/>
+  <!--param name="robot_description" textfile="$(arg model)"/-->
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="verbose" value="true"/>
@@ -28,7 +28,12 @@
     <param name="dev" value="/dev/input/js1"/>
   </node>
 
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 3 -y -12 -z 0.5 -model prius"/>
-
+  
+  <param name="robot_description" command="$(find xacro)/xacro '$(find osv_description)/urdf/osv.urdf.xacro'
+    --inorder
+    " />
+  
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 3 -y -12 -z 0.5 -model osv"/>
+  
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 </launch>
