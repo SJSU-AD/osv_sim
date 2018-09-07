@@ -10,9 +10,8 @@ RUN:
 
 
 
-
-
-''' sudo apt-get ros-kinetic-fake-localization '''
+Known Possible Error or Missing Package:
+```sudo apt-get ros-kinetic-fake-localization```
 
 
 
