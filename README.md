@@ -1,7 +1,7 @@
 # osv_sim
 A simulation repository for the OSV platform.
 
-RUN:
+RUN:   
 ```roslaunch fusion_ad_sim demo.launch```
 
 
@@ -10,7 +10,7 @@ RUN:
 
 
 
-Known Possible Error or Missing Package:
+Known Possible Error or Missing Package:   
 ```sudo apt-get ros-kinetic-fake-localization```
 
 
