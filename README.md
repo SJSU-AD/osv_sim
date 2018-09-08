@@ -19,6 +19,7 @@ Follow the Steps one by one
 ```
 sudo apt-get remove ros-kinetic-gazebo*
 sudo apt-get upgrade
+sudo apt-get install ros-kinetic-libgazebo8-dev
 sudo apt-get install ros-kinetic-gazebo8*  
 sudo apt-get install ros-kinetic-gazebo-worlds-oru  
 sudo apt-get install ros-kinetic-orunav-mpc  
