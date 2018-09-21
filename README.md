@@ -23,8 +23,6 @@ $ sudo apt-get update
 $ wget https://bitbucket.org/osrf/release-tools/raw/default/jenkins-scripts/lib/dependencies_archive.sh -O /tmp/dependencies.sh
 ROS_DISTRO=dummy . /tmp/dependencies.sh
 $ sudo apt-get install $(sed 's:\\ ::g' <<< $BASE_DEPENDENCIES) $(sed 's:\\ ::g' <<< $GAZEBO_BASE_DEPENDENCIES)
-$ sudo apt-get remove ros-kinetic-gazebo*
-$ sudo apt-get upgrade
 $ sudo apt-get install ros-kinetic-libgazebo8-dev
 $ sudo apt-get install ros-kinetic-gazebo8*  
 $ sudo apt-get install ros-kinetic-gazebo-worlds-oru  
