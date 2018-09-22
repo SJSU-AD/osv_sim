@@ -1,0 +1,43 @@
+<robot
+  name="Chassis_OSV">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.56198 0.33364 -0.0015378"
+        rpy="0 0 0" />
+      <mass
+        value="246.47" />
+      <inertia
+        ixx="17.794"
+        ixy="-5.8734"
+        ixz="-1.9532"
+        iyy="99.04"
+        iyz="-0.031118"
+        izz="104.79" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Chassis_OSV/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Chassis_OSV/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
