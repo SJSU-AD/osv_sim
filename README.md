@@ -1,6 +1,11 @@
 # osv_sim
 A simulation repository for the OSV platform.
 
+## Prerequisite 
+This simulation has been tested in the following environment.  
+* Ubuntu 16.04 LTS  
+* ROS Kinetic Kame  
+
 
 RUN:   
 ```roslaunch fusion_ad_sim demo.launch```
