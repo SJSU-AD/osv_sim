@@ -18,7 +18,8 @@ $ wget https://bitbucket.org/osrf/release-tools/raw/default/jenkins-scripts/lib/
 $ sudo apt-get install libignition-math3
 $ sudo apt-get install $(sed 's:\\ ::g' <<< $BASE_DEPENDENCIES) $(sed 's:\\ ::g' <<< $GAZEBO_BASE_DEPENDENCIES)
 $ sudo apt-get install ros-kinetic-gazebo8*  
-$ sudo apt-get ros-kinetic-fake-localization
+$ sudo apt-get install ros-kinetic-fake-localization
+$ sudo apt-get install ros-kinetic-joy
 $ source /opt/ros/kinetic/setup.bash  
 ```  
 
