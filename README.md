@@ -1,6 +1,11 @@
 # osv_sim
 A simulation repository for the OSV platform.
 
+## Prerequisite 
+This simulation has been tested in the following environment.  
+* Ubuntu 16.04 LTS  
+* ROS Kinetic Kame  
+
 
 Please note that the current simulation has been set to run w/o the gui.  
 Therefore, this simulation will launch without the graphical component.  
