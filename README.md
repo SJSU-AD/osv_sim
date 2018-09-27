@@ -2,6 +2,12 @@
 A simulation repository for the OSV platform.
 
 
+Please note that the current simulation has been set to run w/o the gui.  
+Therefore, this simulation will launch without the graphical component.  
+Visualization is done through RVIZ, which is launched at initialization by default.  
+  
+This is done to reduce resource used on host computer, especially those who uses virtual machine or weaker machine.  
+
 RUN:   
 ```roslaunch fusion_ad_sim demo.launch```
 
