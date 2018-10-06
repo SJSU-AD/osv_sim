@@ -32,12 +32,22 @@ $ sudo apt-get install ros-kinetic-gazebo8*
 $ sudo apt-get install ros-kinetic-fake-localization
 $ sudo apt-get install ros-kinetic-joy
 $ source /opt/ros/kinetic/setup.bash  
-```  
+```    
+
+Building the simulation  
+```
+$ catkin_make --pkg osv_msgs
+$ catkin_make
+```   
 
 
 Troubleshooting:  
 Q: Catkin_make is telling me that Control.h is not found  
 A: Try catkin_make again, that's just the custom message not built for the first time you build the simulation  
+
+Q: Some node is failing or some package is missing at build   
+A: run this ```rosdep install --from-paths src --ignore-src -r -y```  
+
 
 
 Credit:  
