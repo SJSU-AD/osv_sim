@@ -30,7 +30,7 @@
   </node>
 
   
-  <param name="robot_description" command="$(find xacro)/xacro '$(find osv_description)/urdf/osv.urdf.xacro'
+  <param name="robot_description" command="$(find xacro)/xacro '$(find osv_description)/urdf/osv_lean.urdf.xacro'
     --inorder
     " />
   
